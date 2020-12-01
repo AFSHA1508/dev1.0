@@ -1,7 +1,7 @@
 <html>
     <head>
-        <title>HTML Introduction</title>
-        <link rel="stylesheet" href="style.css">
+        <title>HTML Elements</title>
+        <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
@@ -13,14 +13,14 @@
     <!-----NavigationBar----->
         <section id="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="index.html"><img src="img/logo1.png" height="80"></a>
+  <a class="navbar-brand" href="../index.html"><img src="../img/logo1.png" height="80"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.html"><i class="fa fa-home"></i>
+        <a class="nav-link" href="../index.html"><i class="fa fa-home"></i>
 HOME <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
@@ -31,7 +31,7 @@ HOME <span class="sr-only">(current)</span></a>
   
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="HTML.html">HTML</a>
+    <a class="dropdown-item" href="../HTML.html">HTML</a>
     <a class="dropdown-item" href="#">CSS</a>
     <a class="dropdown-item" href="#">JAVASCRIPT</a>
   </div>
@@ -40,10 +40,10 @@ HOME <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
           <div class="dropdown">
-        <a class="nav-link" href="index.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ARTIFICIAL INTELLIGENCE</a>
+        <a class="nav-link" href="../index.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ARTIFICIAL INTELLIGENCE</a>
           
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="ml.html">MACHINE LEARNING</a>
+    <a class="dropdown-item" href="../ml.html">MACHINE LEARNING</a>
     <a class="dropdown-item" href="#">DEEP LEARNING</a>
    
   </div>
@@ -117,59 +117,69 @@ ABOUT US</a>
 
 </div>
         <div class="main">
-            <img src="img/1200px-HTML5_logo.png" height="100" width="100">
-            <div class="titlebar-container"><div class="titlebar"><h1 class="title">Getting started with HTML</h1></div></div><br/>
-            <table class="learn-box standard-table">
- <tbody>
-  <tr>
-   <th style="border-color: 5px solid #f69d3c;
-    background-color: #ffe8d4;padding: 20px;"scope="row">Prerequisites:</th>
-   <td style="border-color: #f69d3c;
-    background-color: #ffe8d4;padding: 10px;">Basic computer literacy, <a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/Installing_basic_software">basic software installed</a>, and basic knowledge of <a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/Dealing_with_files">working with files</a>.</td>
-  </tr>
-  <tr>
-   <th style="border-color: #f69d3c;
-    background-color: #ffe8d4;padding: 20px;" scope="row">Objective:</th>
-   <td style="border-color: #f69d3c;
-    background-color: #ffe8d4; padding: 10px;">To gain basic familiarity with HTML, and practice writing a few HTML elements.</td>
-  </tr>
- </tbody>
-</table>
-    <br/>  
+            <img src="../img/1200px-HTML5_logo.png" height="100" width="100">
             
-  <p><b>HTML</b> is not a programming language; it is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way.</p>
-            <p><b>Hypertext Markup Language</b> is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+            <h2 id="Anatomy_of_an_HTML_element" style="background-color: #98FB98">HTML - ELEMENTS</h2>
+            <p>An <B>element </B> is a part of a webpage. In XML and HTML, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag.
+            </p>
+            <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-<div class="titlebar"><h2 class="title" style="background-color: #98FB98">Why is it important to learn HTML?</h2></div>
-          
- <p><b style="border-color: #f69d3c;
-    background-color: #ffe8d4;">1. You’ll be able to create your unique website</b><br/>Learning HTML would make sure you can design your unique website without any help.<br/>
-     <b style="border-color: #f69d3c;
-    background-color: #ffe8d4;">2. It’s effortless to learn</b><br/>
-     Unlike other programming languages, HTML is far easier to understand and learn. One does not require a computer science degree to understand it. Simply the basic knowledge of the web will suffice. <br/>
-     <b style="border-color: #f69d3c;
-    background-color: #ffe8d4;">3. HTML is supported by almost all browsers</b><br/>Almost every browser, from Mozilla to Internet explorer to Safari that exists in the world support HTML. So if your website gets written in HTML, you need not worry because it is bound to show up in all browsers regardless of where it accessed through.<br/>
-     <b style="border-color: #f69d3c;
-    background-color: #ffe8d4;">4. Become a web designer</b><br/>
-     If you want to start a carrer as a professional web designer, HTML and CSS designing is a must skill.
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+            <table class="table">
+<tbody><tr>
+<th>Start tag</th>
+<th>Element content</th>
+<th>End tag</th>
+</tr>
+<tr>
+<td>&lt;h1&gt;</td>
+<td>My First Heading</td>
+<td>&lt;/h1&gt;</td>
+</tr>
+<tr>
+<td>&lt;p&gt;</td>
+<td>My first paragraph.</td>
+<td>&lt;/p&gt;</td>
+</tr>
+<tr>
+<td>&lt;em&gt;</td>
+<td><em>emphasized</em></td>
+<td><em>&lt;em&gt;</em></td>
+</tr>
+</tbody></table>
+            
+            <p style="border-color: 5px solid #f69d3c;
+    background-color: #ffe8d4;padding: 20px;"scope="row"><strong>Note :  </strong>In HTML, a self-closing element is written simply as &lt;br&gt;. In XHTML, a self-closing element requires a space and a trailing slash, such as   &lt;br /&gt;.</p>
+            
+            <h2 style="background-color: #98FB98">Nesting HTML Elements</h2>
+            <p>It is often necessary to code certain tags (and their text) within the definition of other tags (between the start and end tags).</p>
+            <p>Element inside another element is bascially known as nesting of elements.</p>
+            <p>All HTML documents contain four HTML elements ( &lt;html&gt; , &lt;head&gt; , &lt;title&gt; ,&lt;body&gt; )</p><br/>
+            <img src="../img/nestingelements.PNG" style="border: 2px solid #ffe8d4;"><br/><br/>
+            
+            <p style="border-color: 5px solid #f69d3c;
+    background-color: #ffe8d4;padding: 20px;"scope="row"><strong>Note :  </strong>
+                <em>Never Skip the End Tag.</em>
+Some HTML elements will display correctly, even if you forget the end tag.
             </p>
             
-    <div class="titlebar"><h4 class="title" style="background-color: #98FB98">Hello World using HTML.</h4></div> <br/>
             
-            
-    <div class="main">
-            <img src="img/helloworlddhtml.PNG" style="border: 2px solid #ffe8d4;;" >
-            
-</div><br/>
-            <B style="background-color: #B0C4DE	;">OUTPUT :</B>
-            <div class="main">
-            <img src="img/helloworldop.PNG" height="100" width="800" style="border: 2px solid #ffe8d4;;"
-            >
-            
-</div><br/>
-         
-        </div>
-<script>
+            </div>
+        <script>
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
@@ -185,48 +195,3 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
- 
-       
